@@ -1,9 +1,9 @@
 <div data-popup-overlay data-popup-close class="popup__overlay">
 </div>
 
-<section id="section-{{ section.id }}" class="section" data-section-id="{{ section.id }}" data-section-type="custom-popup">
-  <div data-popup class="popup">
-    <div data-popup-close class="popup__quit">
+<section id="section-{{ section.id }}" class="section" style="background-color: {{section.settings.background-color}}" data-section-id="{{ section.id }}" data-section-type="custom-popup">
+  <div data-popup class="popup" style="background-color: {{section.settings.background-color}}">
+    <div data-popup-close class="popup__quit" style="background-color: {{section.settings.background-color}}">
       ╳
     </div>
     <div class="grid">
@@ -19,7 +19,6 @@
       </div>
       <div class="grid__cell 1/2--lap-and-up">
         <div class="popup__right-content">
-          <img class="popup__logo" src="{{ section.settings.picto | img_url : 'master' }}" alt="{{ section.settings.picto.alt }}">
           <div class="popup__title">{{ section.settings.title_right }}</div>
           <div class="popup__text">{{ section.settings.text_right }}</div>
           <div class="popup__newsletter-container">
@@ -80,6 +79,13 @@
   "name": "Custom popup",
   "settings": [
     {
+     "type":      "color",
+     "id":        "background-color",
+     "label":     "change the background color",
+     "default":   "#ffffff",
+     "info":      "Text"
+    },
+    {
       "type" : "header",
       "content" : "Left part"
     },
@@ -106,11 +112,6 @@
     {
       "type" : "header",
       "content" : "Right part"
-    },
-    {
-      "type": "image_picker",
-      "id": "picto",
-      "label": "Picto"
     },
     {
       "type": "text",
