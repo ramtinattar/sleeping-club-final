@@ -1,0 +1,491 @@
+// general-header.liquid
+
+// @media(min-width: 1024px) {
+//   .branding {
+//     margin-left: 100px;
+//     margin-bottom: -120px;
+//   }
+//
+//   .main-header {
+//     margin-top: 30px;
+//   }
+// }
+//
+// @media(max-width: 1024px) {
+//   .header-tools .navigation {
+//     padding: 0;
+//   }
+// }
+//
+
+.main-nav-item {
+  font-family: "Poppins"
+}
+
+@media (max-width: 846px) {
+  .header-tools {
+    margin-top: 0;
+  }
+  .branding {
+      height: auto;
+  }
+}
+
+// home-slideshow.liquid
+
+.slide-button {
+  background-color: black;
+  color: white;
+  height: 40px;
+  line-height: 15px;
+  margin-top: 50px;
+}
+
+.slide-button:hover {
+  background-color: #fcc0b4;
+}
+
+.slide-caption p {
+  font-size: 16px;
+  margin-top: -10px;
+}
+
+@media (min-width: 1024px) {
+.slide-subtitle {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 846px) {
+  .slide-text {
+    margin-top: -150px;
+  }
+}
+
+// home-text-columns-with-images.liquid
+
+.home-inline-feature .feature-title {
+  font-size: 16px;
+}
+
+.rte p {
+  font-size: 15px;
+}
+
+.module-inner .section-title {
+  max-width: 1000px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+// home-futured-product.liquid
+
+.input-checkbox-title{
+  padding: 15px;
+  width: 120px;
+  border: 1px solid black;
+  font-family: "Poppins";
+}
+
+.home-order-now .product-details h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.input-checkbox-wrapper  {
+  margin-right: 70px;
+}
+
+.product-Description {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.product-description p {
+    margin-bottom: -15px;
+}
+
+.product-gallery--media-thumbnail[data-product-gallery-selected="true"]::after {
+  box-shadow: none;
+}
+
+.product__add-to-cart .button {
+  height: 80px;
+  color: black;
+}
+
+.product__price--old {
+  font-weight: bold;
+  // text-decoration-color: #fcc0b4;
+  font-size: 24px;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+
+.product__price--old:before {
+    position: absolute;
+    content: "";
+    top: auto;
+    margin-top: 20px;
+    border-top: 2px solid;
+    border-color: #fcc0b4;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    width: 50px;
+}
+
+.product__price--new {
+  font-family: "Poppins";
+  font-size: 18px;
+}
+
+.button {
+  font-size: 18px;
+}
+
+.red {
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Poppins";
+}
+
+.product-logo {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+.product-logo-description {
+  display: inline-block;
+  position: absolute;
+  margin-top: 15px;
+  line-height: 130%;
+}
+
+.product-gallery--media-thumbnail {
+  max-width: 25%;
+}
+
+@media(min-width: 846px) {
+  .home-order-now .product-details h2 {
+    max-width: 350px;
+  }
+}
+
+@media(max-width: 846px) {
+  .product-description {
+    text-align: center;
+  }
+
+  .product-logo-description {
+    display: block;
+    position: relative;
+    margin-top: 5px;
+  }
+
+  .input-checkbox-title{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .input-checkbox-wrapper  {
+    margin-right: 0;
+    width: 50%;
+    padding: 5px;
+  }
+
+}
+
+// home-alternating-content.liquid
+
+.home-left-right-caption {
+  font-size: 16px;
+}
+
+@media(min-width: 1024px) {
+  .home-left-right-feature:first-child {
+    margin-bottom: -150px;
+  }
+
+  h1, .feature-title {
+    font-size: 50px;
+  }
+}
+
+@media(max-width: 846px) {
+  .home-left-right-feature:nth-child(odd) .home-left-right-media img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-left-right-feature:nth-child(even) .home-left-right-media img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .feature-title,
+  .home-left-right-caption {
+    text-align: center;
+  }
+}
+
+// pxs-video.liquid
+
+.video-play-button {
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 40px;
+  background: none;
+}
+
+.video-overlay-button-secondary .video-play-button {
+    background: none;
+}
+
+.video-overlay-button-secondary .video-play-icon {
+  background: none;
+}
+
+.video-play-button .video-play-icon {
+  color: white;
+}
+
+// home-custom-reviews.liquid
+
+.reviews:before {
+  border: none;
+}
+
+.reviews1 {
+  background-color: inherit;
+}
+
+.reviews:after {
+  display: none;
+}
+
+.reviews__text {
+  font-size: 17px;
+}
+
+.reviews__author {
+  font-size: 17px;
+  font-family: "Poppins"
+}
+
+.reviews__image1 {
+  margin-left: 0;
+  width: auto;
+  margin-top: 70px;
+}
+
+.reviews1 {
+  right: 4%;
+  left: auto;
+  top: 0;
+  margin-top: 70px;
+}
+
+.reviews__image2 {
+  // position: absolute;
+  right: 0;
+  bottom: 190px;
+  margin-bottom: -50px;
+}
+
+.animation-logo {
+  width: auto;
+  right: 40px;
+}
+
+.home-custom-reviews {
+  background: none;
+  // height: 900px;
+}
+
+#container { margin: 0%; }
+
+#circle { position: relative; width: 100%; padding-bottom: 100%; overflow: hidden; }
+
+#circle text { font-size: 12px; font-family: "Poppins"}
+
+#circle svg { position: absolute; left: 0; top: 0; width: 100%; height: 640px;
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+
+.home-custom-reviews__circle-container div {
+  margin-top: -850px;
+}
+
+@media (max-width: 1300px) {
+  .reviews1 {
+    top: 0;
+  }
+  .reviews {
+    width: 31%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .reviews__image2 {
+    width: 682px;
+    height: 521px;
+    position: absolute;
+  }
+
+  .home-custom-reviews {
+    height: 900px;
+  }
+}
+
+@media (min-width: 980px) and (max-width: 1500px) {
+  .home-custom-reviews {
+    height: 900px;
+  }
+
+  .reviews__image2 {
+    position: absolute;
+    width: 45%;
+  }
+}
+
+@media (max-width: 980px) {
+
+  .home-custom-reviews__circle-container {
+      display: none;
+  }
+
+  .reviews {
+    position: relative;
+    width: 80%;
+  }
+
+  .reviews__text {
+    line-height: 30px;
+  }
+
+  .home-custom-reviews__container  {
+    display: table;
+  }
+
+  .reviews1 {
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+  }
+
+  .reviews__image2 {
+    margin-bottom: -200px;
+    margin-top: 180px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70%;
+  }
+}
+
+// pxs-newsletter.liquid
+
+.pxs-newsletter-heading {
+    font-size: 36px;
+}
+
+.pxs-newsletter .inline-field-submit {
+  background-color: #fcc0b4;
+  height: 60px;
+  margin-left: 10px;
+}
+
+.pxs-newsletter .inline-field-submit:hover {
+  background-color: #E7E8E0;
+}
+
+.accent-style .input-field {
+  border: none;
+  background-color: #E7E8E0;
+  height: 60px;
+}
+
+.pxs-newsletter {
+    max-width: 100%;
+}
+
+.pxs-newsletter-text p {
+    max-width: 480px;
+}
+
+@media(max-width: 846px) {
+  .pxs-newsletter .inline-field-submit {
+    margin-left: 0;
+  }
+}
+
+// general-footer.liquid
+
+.footer__logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.footer-link-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-wrapper a {
+  font-size: 16px;
+}
